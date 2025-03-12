@@ -54,7 +54,7 @@ export const projects = {
     message: `
       Entre no grupo de WhatsApp para dar continuidade à seleção.<br><br>
       <a href='https://chat.whatsapp.com/G67Z1lmODnX9MRw4FNG3KG'>Whatsapp - Bahia (clique aqui)</a><br>
-      <a href='https://chat.whatsapp.com/BP00PPFYODP8zhD1WRDEMQ'>Whatsapp - Ceará (clique aqui)</a><br>
+      <a href='https://chat.whatsapp.com/DZjptsiXl3yBxA62eKBq2O'>Whatsapp - Ceará (clique aqui)</a><br>
       <a href='https://chat.whatsapp.com/FCu8uHJ2l6eHkesAR0d3RR'>Whatsapp - São Paulo (clique aqui)</a><br><br>
       <b>*é obrigatório acessar o grupo do WhatsApp para participar das etapas processo seletivo e obter mais informações<b>
 
