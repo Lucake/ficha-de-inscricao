@@ -77,5 +77,15 @@ export const fullForm = {
       code: "entry.1479635839",
       type: "input",
     },
+    {
+      name: "genero",
+      code: "entry.159227718",
+      type: "input",
+    },
+    {
+      name: "renda",
+      code: "entry.1854335257",
+      type: "input",
+    },
   ],
 };

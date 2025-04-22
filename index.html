@@ -43,12 +43,27 @@
                 <h2>Informações pessoais</h2>
                 <label for="input-nome-2">Nome Completo</label>
                 <input type="text" name="nome-2" id="input-nome-2" required="required"  placeholder="Digite seu nome" maxlength="200">
+                
                 <label for="input-telefone-2">Telefone (com DDD)</label>
                 <input type="text" name="telefone-2" id="input-telefone-2" required="required" placeholder="(11)95555-5555" maxlength="13" minlength="10">
+
                 <label for="input-email-2">E-mail</label>
                 <input type="text" name="email-2"-2 id="input-email-2" placeholder="seuemail@mail.com" required="required" pattern="[^@\s]+@[^@\s]+" maxlength="120" title="e-mail inválido" >
+                
                 <label for="input-nascimento-2">Data de Nascimento</label>
                 <input type="date" name="nascimento" id="input-nascimento-2" placeholder="01/01/2000" required="required" min="1994-01-01" max="2024-01-01" title="Insira uma data de nascimento válida">
+                
+                <label for="genero">Qual a sua Identidade de Gênero?</label>
+                <select name="genero" id="genero" required="required">
+                    <option value="" disabled selected> identifico como</option>
+                    <option value="Homem">Homem</option>
+                    <option value="Mulher">Mulher</option>
+                    <option value="Homem Trans">Homem Trans</option>
+                    <option value="Mulher Trans">Mulher Trans</option>
+                    <option value="Não Binário">Não Binário</option>
+                    <option value="Prefiro não responder">Prefiro não responder</option>
+                </select>   
+
                 <label for="input-escolaridade-2">Escolaridade</label>
                 <select name="escolaridade" id="input-escolaridade-2" required="required">
                     <option value="" disabled selected>Selecione a Escolaridade</option>
@@ -60,6 +75,7 @@
                     <option value="Ensino Superior">Ensino Superior Concluído</option>
                     <option value="Ensino Superior">Ensino Superior Incompleto</option>
                 </select>
+                
                 <label for="input-projeto-2">Projeto</label>
                 <select type="text" name="projeto-2" required="required" id="input-projeto-2">
                     <option value="" disabled selected>Selecione o Projeto</option>
@@ -70,6 +86,7 @@
                 <select name="estado" id="input-estado-2" required="required">
                     <option value="" disabled selected>Selecione um projeto válido</option>
                 </select>   
+                
                 <label for="input-cidade-2">Cidade</label>
                 <input type="text" name="cidade" placeholder="Sua cidade" id="input-cidade-2" required="required">
 
@@ -77,6 +94,7 @@
                 <select name="turma" id="input-turma-2" required="required">
                     <option value="" disabled selected>Selecione um projeto válido</option>
                 </select>   
+
                 <label for="input-como-soube-2">Como você conheceu o projeto?</label>
                 <select name="como-soube" id="input-como-soube-2" required="required">
                     <option value="" disabled selected>Selecione</option>
@@ -97,6 +115,17 @@
                     <option value="Zurich">Zurich</option>
                     <option value="Zurich Santander">Zurich Santander</option>
                 </select>
+
+
+                <label for="renda">Qual a sua renda familiar?</label>
+                <select name="renda" id="renda" required="required">
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="Até 1 salário">Até 1 Salário Mínimo</option>
+                    <option value="Até 2 salários">Até 2 Salários Mínimos</option>
+                    <option value="Até 3 salários">Até 3 Salários Mínimos</option>
+                    <option value="Mais que 3 salários">Mais que 3 Salários Mínimos</option>
+                </select>   
+
                 <input type="submit" value="Submit">
             </form>
         </div>
