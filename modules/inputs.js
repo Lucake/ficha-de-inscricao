@@ -5,6 +5,7 @@ const PROJECT_FIELD2 = document.querySelector("#input-projeto-2");
 export const updateInputs = (projectName) => {
   setEstadoOptions(projectName);
   setTurmaOptions(projectName);
+  setIndicacaoOptions(projectName);
 };
 
 export const initProjectsInput = () => {
@@ -48,6 +49,7 @@ const setEstadoOptions = (projectName) => {
   const SELECT = document.querySelector("#input-estado-2");
   SELECT.innerHTML =
     '<option value="" disabled selected>Selecione um estado</option>';
+  // set used to avoid duplicates
   let states = [...new Set(projects[projectName].cities.map((e) => e.state))];
   states.forEach((e) => {
     const htmlString = `<option value="${e}">${e}</option>`;
@@ -58,5 +60,22 @@ const setEstadoOptions = (projectName) => {
 
   SELECT.addEventListener("change", (e) => {
     filterTurma(SELECT.value);
+  });
+};
+
+const setIndicacaoOptions = (projectName) => {
+  const SELECT = document.querySelector("#input-como-soube-2");
+  const options = projects[projectName].howDidYouKnow;
+
+  if (options.length == 0) return;
+
+  //clear other projects custom options
+  SELECT.querySelectorAll(".custom").forEach((e) => e.remove());
+
+  options.forEach((e) => {
+    const htmlString = `<option value="${e}" class="custom">${e}</option>`;
+    const div = document.createElement("div");
+    div.innerHTML = htmlString;
+    SELECT.append(div.firstChild);
   });
 };

@@ -1,3 +1,12 @@
+// Project data:
+// name: nome do projeto
+// logo: url do logo do projeto
+// image: url da imagem de capa da página
+// color: cor da página do projeto em hexadecimal
+// message: Mensagem que aparece ao finalizar o cadastro (aceita html, podendo inserir links para grupos, etc),
+// howDidYouKnow: Adiciona items a "como soube do projeto", ideal colocar os financiadores
+// cities: array com as cidades onde o projeto é realizado. Deve conter um objeto com estado e cidade
+
 export const projects = {
   restart: {
     name: "AWS Restart",
@@ -5,6 +14,7 @@ export const projects = {
     image: "./images/photos/esv.jpg",
     color: "#027DBA",
     message: "Para dar continuidade no processo, aguarde o contato da equipe",
+    howDidYouKnow: ["Amazon", "Softex"],
     cities: [
       {
         state: "Pernambuco",
@@ -19,6 +29,7 @@ export const projects = {
     image: "./images/photos/cdd.jpg",
     color: "#027DBA",
     message: "Para dar continuidade no processo, aguarde o contato da equipe",
+    howDidYouKnow: [],
     cities: [
       {
         state: "Pernambuco",
@@ -33,6 +44,7 @@ export const projects = {
     image: "./images/photos/esv.jpg",
     color: "#17428B",
     message: "Para dar continuidade no processo, aguarde o contato da equipe",
+    howDidYouKnow: ["Carrefour"],
     cities: [
       {
         state: "Bahia",
@@ -60,8 +72,8 @@ export const projects = {
       <a href='https://chat.whatsapp.com/DZjptsiXl3yBxA62eKBq2O'>Whatsapp - Ceará (clique aqui)</a><br>
       <a href='https://chat.whatsapp.com/G67Z1lmODnX9MRw4FNG3KG'>Whatsapp - São Paulo (clique aqui)</a><br><br>
       <b>*é obrigatório acessar o grupo do WhatsApp para participar das etapas processo seletivo e obter mais informações<b>
-
     `,
+    howDidYouKnow: ["Suzano", "Zurich", "Zurich Santander"],
     cities: [
       {
         state: "Bahia",
