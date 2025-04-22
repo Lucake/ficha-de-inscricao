@@ -15,6 +15,7 @@ export const projects = {
     color: "#027DBA",
     message: "Para dar continuidade no processo, aguarde o contato da equipe",
     howDidYouKnow: ["Amazon", "Softex"],
+    disabledFieldsId: ["input-escolaridade-2"],
     cities: [
       {
         state: "Pernambuco",
@@ -30,6 +31,7 @@ export const projects = {
     color: "#027DBA",
     message: "Para dar continuidade no processo, aguarde o contato da equipe",
     howDidYouKnow: [],
+    disabledFieldsId: [],
     cities: [
       {
         state: "Pernambuco",
@@ -45,6 +47,7 @@ export const projects = {
     color: "#17428B",
     message: "Para dar continuidade no processo, aguarde o contato da equipe",
     howDidYouKnow: ["Carrefour"],
+    disabledFieldsId: [],
     cities: [
       {
         state: "Bahia",
@@ -74,6 +77,7 @@ export const projects = {
       <b>*é obrigatório acessar o grupo do WhatsApp para participar das etapas processo seletivo e obter mais informações<b>
     `,
     howDidYouKnow: ["Suzano", "Zurich", "Zurich Santander"],
+    disabledFieldsId: [],
     cities: [
       {
         state: "Bahia",

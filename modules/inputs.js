@@ -6,6 +6,7 @@ export const updateInputs = (projectName) => {
   setEstadoOptions(projectName);
   setTurmaOptions(projectName);
   setIndicacaoOptions(projectName);
+  hideDisabledFields(projectName);
 };
 
 export const initProjectsInput = () => {
@@ -77,5 +78,27 @@ const setIndicacaoOptions = (projectName) => {
     const div = document.createElement("div");
     div.innerHTML = htmlString;
     SELECT.append(div.firstChild);
+  });
+};
+
+const hideDisabledFields = (projectName) => {
+  const fields = projects[projectName].disabledFieldsId;
+
+  //reset form
+  document.querySelectorAll(".disabled").forEach((el) => {
+    el.required = true;
+    el.classList.remove("disabled", "hidden");
+  });
+
+  if (fields.length == 0) return;
+
+  fields.forEach((id) => {
+    let element = document.querySelector(`#${id}`);
+    element.required = false;
+    element.value = "";
+    element.classList.add("disabled", "hidden");
+    document
+      .querySelector(`label[for=${id}]`)
+      .classList.add("disabled", "hidden");
   });
 };
