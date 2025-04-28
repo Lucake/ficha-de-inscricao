@@ -30,6 +30,18 @@ export const fill_full_form = () => {
   document.querySelector(
     'select[name="estado"] option:nth-child(2)'
   ).selected = true;
+  document.querySelector(
+    'select[name="genero"] option:nth-child(2)'
+  ).selected = true;
+  document.querySelector(
+    'select[name="renda"] option:nth-child(2)'
+  ).selected = true;
+  document.querySelector(
+    'select[name="turma"] option:nth-child(2)'
+  ).selected = true;
+  document.querySelector(
+    'select[name="como-soube"] option:nth-child(2)'
+  ).selected = true;
 };
 
 const change_section = () => {

@@ -30,7 +30,7 @@ const setTurmaOptions = (projectName) => {
   SELECT.innerHTML =
     '<option value="" disabled selected>Selecione uma turma</option>';
   projects[projectName].cities.forEach((e) => {
-    const htmlString = `<option value="${e.city}" data-state="${e.state}">${e.city}</option>`;
+    const htmlString = `<option value="${e.city}" data-state="${e.state}">Núcleo - ${e.city}</option>`;
     const div = document.createElement("div");
     div.innerHTML = htmlString;
     SELECT.append(div.firstChild);

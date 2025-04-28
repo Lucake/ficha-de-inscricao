@@ -45,7 +45,13 @@ export const projects = {
     logo: "./images/logos/esv.png",
     image: "./images/photos/esv.jpg",
     color: "#17428B",
-    message: "Para dar continuidade no processo, aguarde o contato da equipe",
+    message: `
+      Entre no grupo de WhatsApp para dar continuidade à seleção.<br><br>
+      <a href='https://chat.whatsapp.com/JGsQf8WQr9D6lcjq7Wsd1r'>Whatsapp - Bahia (clique aqui)</a><br>
+      <a href='https://chat.whatsapp.com/Gj5KavGwe3S4paf97cx8El'>Whatsapp - Ceará (clique aqui)</a><br>
+      <a href='https://chat.whatsapp.com/FGD5wZNUWjB12FFWfr3Cqv'>Whatsapp - Pernambuco (clique aqui)</a><br><br>
+      <b>*é obrigatório acessar o grupo do WhatsApp para participar das etapas processo seletivo e obter mais informações<b>
+    `,
     howDidYouKnow: ["Carrefour"],
     disabledFieldsId: [],
     cities: [
@@ -54,8 +60,8 @@ export const projects = {
         city: "Salvador",
       },
       {
-        state: "Bahia",
-        city: "São Cristovão",
+        state: "Ceará",
+        city: "Fortaleza",
       },
       {
         state: "Pernambuco",
@@ -72,8 +78,8 @@ export const projects = {
     message: `
       Entre no grupo de WhatsApp para dar continuidade à seleção.<br><br>
       <a href='https://chat.whatsapp.com/G67Z1lmODnX9MRw4FNG3KG'>Whatsapp - Bahia (clique aqui)</a><br>
-      <a href='https://chat.whatsapp.com/DZjptsiXl3yBxA62eKBq2O'>Whatsapp - Ceará (clique aqui)</a><br>
-      <a href='https://chat.whatsapp.com/G67Z1lmODnX9MRw4FNG3KG'>Whatsapp - São Paulo (clique aqui)</a><br><br>
+      <a href='https://chat.whatsapp.com/Gj5KavGwe3S4paf97cx8El'>Whatsapp - Ceará (clique aqui)</a><br>
+      <a href='https://chat.whatsapp.com/FGD5wZNUWjB12FFWfr3Cqv'>Whatsapp - São Paulo (clique aqui)</a><br><br>
       <b>*é obrigatório acessar o grupo do WhatsApp para participar das etapas processo seletivo e obter mais informações<b>
     `,
     howDidYouKnow: ["Suzano", "Zurich", "Zurich Santander"],
