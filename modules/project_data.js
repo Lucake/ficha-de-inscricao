@@ -78,8 +78,8 @@ export const projects = {
     message: `
       Entre no grupo de WhatsApp para dar continuidade à seleção.<br><br>
       <a href='https://chat.whatsapp.com/G67Z1lmODnX9MRw4FNG3KG'>Whatsapp - Bahia (clique aqui)</a><br>
-      <a href='https://chat.whatsapp.com/Gj5KavGwe3S4paf97cx8El'>Whatsapp - Ceará (clique aqui)</a><br>
-      <a href='https://chat.whatsapp.com/FGD5wZNUWjB12FFWfr3Cqv'>Whatsapp - São Paulo (clique aqui)</a><br><br>
+      <a href='https://chat.whatsapp.com/DZjptsiXl3yBxA62eKBq2O'>Whatsapp - Ceará (clique aqui)</a><br>
+      <a href='https://chat.whatsapp.com/G67Z1lmODnX9MRw4FNG3KG'>Whatsapp - São Paulo (clique aqui)</a><br><br>
       <b>*é obrigatório acessar o grupo do WhatsApp para participar das etapas processo seletivo e obter mais informações<b>
     `,
     howDidYouKnow: ["Suzano", "Zurich", "Zurich Santander"],
