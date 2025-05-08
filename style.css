@@ -382,6 +382,7 @@ form #input-projeto-2:disabled {
     .container.closed {
         left: -120%;
         animation: none;
+        pointer-events: none;
     }
 
     .container.closed+#container2 {
