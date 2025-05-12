@@ -6,6 +6,7 @@ export const debug = () => {
   ) {
     fill_full_form();
     change_section();
+    console.log("teste");
   }
 };
 

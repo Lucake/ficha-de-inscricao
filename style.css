@@ -88,6 +88,12 @@ a {
 .container.closed {
     left: -100%;
     animation: pushback .5s ease 1 forwards;
+    pointer-events: none;
+}
+
+
+.container.closed input {
+    pointer-events: none;
 }
 
 .container.loading .form-wrapper {
@@ -384,6 +390,7 @@ form #input-projeto-2:disabled {
         animation: none;
         pointer-events: none;
     }
+
 
     .container.closed+#container2 {
         left: 0;

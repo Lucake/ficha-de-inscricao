@@ -13,10 +13,11 @@ const getUrlParameter = (param) => {
   return searchParams.get(param);
 };
 
-window.addEventListener("DOMContentLoaded", (event) => {
+window.addEventListener("DOMContentLoaded", async (event) => {
   document.querySelector("body").classList.remove("preload");
+  window.scrollTo(0, 0);
 
-  initForms();
+  await initForms();
 
   initProjectsInput();
   const projeto = getUrlParameter("projeto");
@@ -25,7 +26,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     initInputs(mobilizador);
   }
   if (projeto && projects[projeto]) {
-    initProject(projeto);
+    await initProject(projeto);
   }
 
   if (DEBUG) {
