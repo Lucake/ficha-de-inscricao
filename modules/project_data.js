@@ -82,7 +82,7 @@ export const projects = {
       <a href='https://chat.whatsapp.com/Gty0qAyYrNSGs7BejRykUE'>Whatsapp - São Paulo (clique aqui)</a><br><br>
       <b>*é obrigatório acessar o grupo do WhatsApp para participar das etapas processo seletivo e obter mais informações<b>
     `,
-    howDidYouKnow: ["Suzano", "Zurich", "Zurich Santander"],
+    howDidYouKnow: ["Suzano", "Zurich Seguros", "Zurich Santander"],
     disabledFieldsId: [],
     cities: [
       {
