@@ -103,4 +103,23 @@ export const projects = {
       },
     ],
   },
+  partiufuturo: {
+    name: "Partiu Futuro",
+    logo: "./images/logos/partiu.png",
+    image: "./images/photos/partiu.png",
+    color: "#FF8930",
+    message: `
+      Entre no grupo de WhatsApp para dar continuidade à seleção.<br><br>
+      <a href='https://chat.whatsapp.com/CkUJ2iMiYwE8tQdIQ7srMZ'>Grupo do Whatsapp (clique aqui)</a><br><br>
+      <b>*é obrigatório acessar o grupo do WhatsApp para participar das etapas processo seletivo e obter mais informações<b>
+    `,
+    howDidYouKnow: ["Suzano", "Zurich Seguros", "Zurich Santander"],
+    disabledFieldsId: [],
+    cities: [
+      {
+        state: "Belém",
+        city: "Pará",
+      },
+    ],
+  },
 };
