@@ -77,9 +77,9 @@ export const projects = {
     color: "#f1872d",
     message: `
       Entre no grupo de WhatsApp para dar continuidade à seleção.<br><br>
-      <a href='https://chat.whatsapp.com/CkUJ2iMiYwE8tQdIQ7srMZ'>Whatsapp - Bahia (clique aqui)</a><br>
-      <a href='https://chat.whatsapp.com/DZjptsiXl3yBxA62eKBq2O'>Whatsapp - Ceará (clique aqui)</a><br>
-      <a href='https://chat.whatsapp.com/CkUJ2iMiYwE8tQdIQ7srMZ'>Whatsapp - São Paulo (clique aqui)</a><br><br>
+      <a href='https://chat.whatsapp.com/JrVMV3GlbslF9KnPGIm0YU'>Whatsapp - Bahia (clique aqui)</a><br>
+      <a href='https://chat.whatsapp.com/JrVMV3GlbslF9KnPGIm0YU'>Whatsapp - Ceará (clique aqui)</a><br>
+      <a href='https://chat.whatsapp.com/JrVMV3GlbslF9KnPGIm0YU'>Whatsapp - São Paulo (clique aqui)</a><br><br>
       <b>*é obrigatório acessar o grupo do WhatsApp para participar das etapas processo seletivo e obter mais informações<b>
     `,
     howDidYouKnow: ["Suzano", "Zurich Seguros", "Zurich Santander"],
