@@ -49,7 +49,7 @@ export const projects = {
       Entre no grupo de WhatsApp para dar continuidade à seleção.<br><br>
       <a href='https://chat.whatsapp.com/H7e3XoZkdEs5yLQ0AEaWxl'>Whatsapp - Bahia (clique aqui)</a><br>
       <a href='https://chat.whatsapp.com/Gj5KavGwe3S4paf97cx8El'>Whatsapp - Ceará (clique aqui)</a><br>
-      <a href='https://chat.whatsapp.com/FGD5wZNUWjB12FFWfr3Cqv'>Whatsapp - Pernambuco (clique aqui)</a><br><br>
+      <a href='https://chat.whatsapp.com/LOjKFOtJUJcJ3vyJSV6MhP'>Whatsapp - Pernambuco (clique aqui)</a><br><br>
       <b>*é obrigatório acessar o grupo do WhatsApp para participar das etapas processo seletivo e obter mais informações<b>
     `,
     howDidYouKnow: ['Carrefour'],
