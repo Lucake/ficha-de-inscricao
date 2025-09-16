@@ -52,7 +52,7 @@ export const projects = {
       <a href='https://chat.whatsapp.com/LOjKFOtJUJcJ3vyJSV6MhP'>Whatsapp - Pernambuco (clique aqui)</a><br><br>
       <b>*é obrigatório acessar o grupo do WhatsApp para participar das etapas processo seletivo e obter mais informações<b>
     `,
-    howDidYouKnow: ['Carrefour'],
+    howDidYouKnow: ['Carrefour', 'Morar Melhor'],
     disabledFieldsId: [],
     cities: [
       {
