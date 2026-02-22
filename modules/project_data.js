@@ -46,6 +46,19 @@ export const projects = {
       },
     ],
   },
+  esv50: {
+    name: "Escola Social do Varejo",
+    logo: "./images/logos/esv.png",
+    image: "./images/photos/esv.jpg",
+    color: "#17428B",
+    message: "Para dar continuidade no processo, aguarde o contato da equipe",
+    cities: [
+      {
+        state: "Pernambuco",
+        city: "Recife",
+      },
+    ],
+  },
   rotas: {
     name: "Rotas e Travessias",
     logo: "./images/logos/rotas.png",
