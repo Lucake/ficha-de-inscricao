@@ -5,3 +5,9 @@ export async function loadYaml(path) {
   const text = await res.text();
   return YAML.parse(text);
 }
+
+export const getUrlParameter = (param) => {
+  const project = window.location.search;
+  const searchParams = new URLSearchParams(project);
+  return searchParams.get(param);
+};
