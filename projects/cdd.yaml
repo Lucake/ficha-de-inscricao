@@ -1,0 +1,13 @@
+id: cdd
+name: Com.Dominio Digital 4.0
+logo: ./images/logos/cdd.png
+image: ./images/photos/cdd.jpg
+color: "#027DBA"
+
+cities:
+  - state: Pernambuco
+    city: Recife
+
+message: >
+  Para dar continuidade no processo,
+  aguarde o contato da equipe

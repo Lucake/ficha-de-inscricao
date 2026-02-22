@@ -1,0 +1,17 @@
+id: esv
+name: Escola Social do Varejo
+logo: ./images/logos/esv.png
+image: ./images/photos/esv.jpg
+color: "#17428B"
+
+cities:
+  - state: Bahia
+    city: Salvador
+  - state: Bahia
+    city: São Cristovão
+  - state: Pernambuco
+    city: Recife
+
+message: >
+  Para dar continuidade no processo,
+  aguarde o contato da equipe

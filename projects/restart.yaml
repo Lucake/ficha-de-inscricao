@@ -1,0 +1,13 @@
+id: restart
+name: AWS Restart
+logo: ./images/logos/restart.png
+image: ./images/photos/esv.jpg
+color: "#027DBA"
+
+cities:
+  - state: Pernambuco
+    city: Recife
+
+message: >
+  Para dar continuidade no processo,
+  aguarde o contato da equipe

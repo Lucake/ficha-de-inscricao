@@ -1,0 +1,13 @@
+id: esv50
+name: Escola Social do Varejo 50+
+logo: ./images/logos/esv50.png
+image: ./images/photos/esv50.jpg
+color: "#17428B"
+
+cities:
+  - state: Pernambuco
+    city: Recife
+
+message: >
+  Para dar continuidade no processo,
+  aguarde o contato da equipe
