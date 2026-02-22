@@ -47,9 +47,9 @@ export const projects = {
     ],
   },
   esv50: {
-    name: "Escola Social do Varejo",
-    logo: "./images/logos/esv.png",
-    image: "./images/photos/esv.jpg",
+    name: "Escola Social do Varejo 50+",
+    logo: "./images/logos/esv50.png",
+    image: "./images/photos/esv50.jpg",
     color: "#17428B",
     message: "Para dar continuidade no processo, aguarde o contato da equipe",
     cities: [
