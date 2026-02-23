@@ -13,5 +13,21 @@ cities:
     city: Recife
 
 message: >
-  Para dar continuidade no processo,
-  aguarde o contato da equipe
+  Entre no grupo de WhatsApp para dar continuidade à seleção.<br><br>
+  <a href='https://chat.whatsapp.com/H7e3XoZkdEs5yLQ0AEaWxl'>Whatsapp - Bahia (clique aqui)</a><br>
+  <a href='https://chat.whatsapp.com/Gj5KavGwe3S4paf97cx8El'>Whatsapp - Ceará (clique aqui)</a><br>
+  <a href='https://chat.whatsapp.com/LOjKFOtJUJcJ3vyJSV6MhP'>Whatsapp - Pernambuco (clique aqui)</a><br><br>
+  <b>*é obrigatório acessar o grupo do WhatsApp para participar das etapas processo seletivo e obter mais informações<b>
+
+locations:
+  - state: Bahia
+    cities:
+      - Salvador
+      - São Cristovão
+  - state: Pernambuco
+    cities:
+      - Recife
+
+age:
+  min: 17
+  max: 29

@@ -1,62 +1,69 @@
-import { projects } from "./project_data.js";
+import { subtractYearsFromToday } from "./utils.js";
 
-const PROJECT_FIELD2 = document.querySelector("#input-projeto-2");
-
-export const updateInputs = (projectName) => {
-  setEstadoOptions(projectName);
-  setTurmaOptions(projectName);
+export const updateInputs = (projectData) => {
+  initEstadoSelect(projectData.locations);
+  initProjectInputs(projectData.name);
+  initBirthdateInput(projectData.age);
 };
 
-export const initProjectsInput = () => {
-  Object.keys(projects).forEach((e) => {
-    const htmlString = `<option value="${projects[e].name}" data-name="${e}">${projects[e].name}</option>`;
-    const div = document.createElement("div");
-    div.innerHTML = htmlString;
-    PROJECT_FIELD2.append(div.firstChild);
-  });
+const setSelectOptions = (
+  selector,
+  options,
+  placeholder = "Selecione uma opção",
+) => {
+  const selectDom = document.querySelector(selector);
+  const placeHolderHTML = `<option value="" disabled selected>${placeholder}</option>`;
+  let optionsHTML = options
+    .map(
+      (optionAttrs) =>
+        `<option value="${optionAttrs.value}">${optionAttrs.label}</option>`,
+    )
+    .join("\n");
 
-  PROJECT_FIELD2.addEventListener("change", (e) => {
-    const projectName = [...PROJECT_FIELD2.querySelectorAll("option")].filter(
-      (e) => e.text == PROJECT_FIELD2.value
-    )[0].dataset.name;
-    updateInputs(projectName);
+  selectDom.innerHTML = placeHolderHTML + optionsHTML;
+};
+
+const initProjectInputs = (projectName) => {
+  const projectField = document.querySelector("#input-projeto");
+  const projectField2 = document.querySelector("#input-projeto-2");
+
+  projectField.value = projectName;
+  projectField2.value = projectName;
+};
+
+const initBirthdateInput = (age) => {
+  const dateField = document.querySelector("#input-nascimento-2");
+  const label = document.querySelector("label[for=input-nascimento-2]");
+  const startYear = subtractYearsFromToday(age.max);
+  const endYear = subtractYearsFromToday(age.min);
+  dateField.min = startYear.toISOString().split("T")[0];
+  dateField.max = endYear.toISOString().split("T")[0];
+  label.innerText += ` (entre ${age.min} e ${age.max}) anos`;
+};
+
+const initEstadoSelect = (estados) => {
+  const placeholder = "Selecione seu estado";
+  const selectId = "#input-estado-2";
+  const attributes = estados.map((estado) => ({
+    label: estado.state,
+    value: estado.state,
+  }));
+
+  setSelectOptions(selectId, attributes, placeholder);
+
+  document.querySelector(selectId).addEventListener("change", (e) => {
+    const estado = document.querySelector(selectId).value;
+    const turmas = estados.filter((e) => e.state == estado)[0].cities;
+    setTurmaOptions(turmas);
   });
 };
 
-const setTurmaOptions = (projectName) => {
-  const SELECT = document.querySelector("#input-turma-2");
-  SELECT.innerHTML =
-    '<option value="" disabled selected>Selecione uma turma</option>';
-  projects[projectName].cities.forEach((e) => {
-    const htmlString = `<option value="${e.city}" data-state="${e.state}">${e.city}</option>`;
-    const div = document.createElement("div");
-    div.innerHTML = htmlString;
-    SELECT.append(div.firstChild);
-  });
-};
-
-const filterTurma = (state) => {
-  const SELECT = document.querySelector("#input-turma-2");
-  SELECT.querySelector("option").selected = true;
-  SELECT.querySelectorAll("option").forEach((opt) => (opt.hidden = false));
-  SELECT.querySelectorAll(
-    `option:not([data-state="${state}"]):not(:disabled)`
-  ).forEach((opt) => (opt.hidden = true));
-};
-
-const setEstadoOptions = (projectName) => {
-  const SELECT = document.querySelector("#input-estado-2");
-  SELECT.innerHTML =
-    '<option value="" disabled selected>Selecione um estado</option>';
-  let states = [...new Set(projects[projectName].cities.map((e) => e.state))];
-  states.forEach((e) => {
-    const htmlString = `<option value="${e}">${e}</option>`;
-    const div = document.createElement("div");
-    div.innerHTML = htmlString;
-    SELECT.append(div.firstChild);
-  });
-
-  SELECT.addEventListener("change", (e) => {
-    filterTurma(SELECT.value);
-  });
+const setTurmaOptions = (turmas) => {
+  const placeholder = "Selecione o núcleo";
+  const selectId = "#input-turma-2";
+  const attributes = turmas.map((nucleo) => ({
+    label: nucleo,
+    value: nucleo,
+  }));
+  setSelectOptions(selectId, attributes, placeholder);
 };

@@ -1,7 +1,5 @@
 import { initForms } from "./modules/form.js";
-import { projects } from "./modules/project_data.js";
 import { initProject } from "./modules/project.js";
-import { initProjectsInput } from "./modules/inputs.js";
 import { initInputs } from "./modules/mobilizador.js";
 import { debug } from "./modules/testing_tools.js";
 import { getUrlParameter } from "./modules/utils.js";
@@ -13,13 +11,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   initForms();
 
-  initProjectsInput();
   const projeto = getUrlParameter("projeto");
   const mobilizador = getUrlParameter("mobilizador");
   if (mobilizador) {
     initInputs(mobilizador);
   }
-  if (projeto && projects[projeto]) {
+  if (projeto) {
     initProject(projeto);
   }
 
@@ -31,3 +28,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
+
+[...document.querySelectorAll("input")].forEach((e) => {
+  e.addEventListener("blur", (el) => el.target.reportValidity());
+});

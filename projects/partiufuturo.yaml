@@ -1,0 +1,23 @@
+id: partiufuturo
+name: Partiu Futuro
+logo: ./images/logos/partiu.png
+image: ./images/photos/partiu.png
+color: "#FF8930"
+
+cities:
+  - state: Pernambuco
+    city: Recife
+
+message: >
+  Entre no grupo de WhatsApp para dar continuidade à seleção.<br><br>
+  <a href='https://chat.whatsapp.com/LgoPzqvHXkUJ85lE4Je7ER?mode=ems_copy_t'>Grupo do Whatsapp (clique aqui)</a><br><br>
+  <b>*é obrigatório acessar o grupo do WhatsApp para participar das etapas processo seletivo e obter mais informações<b>
+
+locations:
+  - state: Pará
+    cities:
+      - Belém
+
+age:
+  min: 17
+  max: 24

@@ -11,3 +11,9 @@ export const getUrlParameter = (param) => {
   const searchParams = new URLSearchParams(project);
   return searchParams.get(param);
 };
+
+export const subtractYearsFromToday = (years) => {
+  let d = new Date();
+  d.setFullYear(d.getFullYear() - years);
+  return d;
+};

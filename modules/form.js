@@ -5,7 +5,7 @@ const form2 = document.querySelector("#form2");
 const CONTAINER1 = document.querySelector("#container1");
 const CONTAINER2 = document.querySelector("#container2");
 
-export const initForms = () => {
+export const initForms = async () => {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     fetch(initialForm.url, {

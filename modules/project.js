@@ -1,4 +1,3 @@
-import { projects } from "./project_data.js";
 import { updateInputs } from "./inputs.js";
 import { updateConclusionMessage } from "./conclusion_message.js";
 import { loadYaml } from "./utils.js";
@@ -17,7 +16,7 @@ export const initProject = async (projectId) => {
   PROJECT_FIELD.value = projectData.name;
   PROJECT_FIELD2.value = projectData.name;
   PROJECT_FIELD2.disabled = true;
-  updateInputs(projectId);
+  updateInputs(projectData);
   updateConclusionMessage(projectData.message);
 };
 
@@ -25,5 +24,3 @@ export const getProjectData = async (projectId) => {
   const projectFileName = `${PROJECT_DATA_PATH}/${projectId}.yaml`;
   return await loadYaml(projectFileName);
 };
-
-getProjectData("esv");

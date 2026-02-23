@@ -9,5 +9,15 @@ cities:
     city: Recife
 
 message: >
-  Para dar continuidade no processo,
-  aguarde o contato da equipe
+  Entre no grupo de WhatsApp para dar continuidade à seleção.<br><br>
+  <a href='https://chat.whatsapp.com/JaTpkQ4uPVfIf3zgAB0Yt7'>Whatsapp - Pernambuco (clique aqui)</a><br><br>
+  <b>*é obrigatório acessar o grupo do WhatsApp para participar das etapas processo seletivo e obter mais informações<b>
+
+locations:
+  - state: Pernambuco
+    cities:
+      - Recife
+
+age:
+  min: 50
+  max: 65

@@ -24,11 +24,11 @@ export const fill_full_form = () => {
   document.querySelector('input[name="email-2"]').value = "teste@teste.com";
   document.querySelector('input[name="nascimento"]').value = "1996-09-30";
   document.querySelector('input[name="cidade"]').value = "Teste";
-  document.querySelector(
-    'select[name="escolaridade"] option:nth-child(2)',
-  ).selected = true;
-  document.querySelector('select[name="estado"] option:nth-child(2)').selected =
-    true;
+  //   document.querySelector(
+  //     'select[name="escolaridade"] option:nth-child(0)',
+  //   ).selected = true;
+  //   document.querySelector('select[name="estado"] option:nth-child(1)').selected =
+  //     true;
 };
 
 const change_section = () => {
