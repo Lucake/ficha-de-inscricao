@@ -1,3 +1,4 @@
+---
 id: esv
 name: Escola Social do Varejo
 logo: ./images/logos/esv.png
@@ -31,3 +32,4 @@ locations:
 age:
   min: 17
   max: 29
+---

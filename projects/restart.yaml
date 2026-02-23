@@ -1,3 +1,4 @@
+---
 id: restart
 name: AWS Restart
 logo: ./images/logos/restart.png
@@ -20,3 +21,4 @@ locations:
 age:
   min: 18
   max: 29
+---

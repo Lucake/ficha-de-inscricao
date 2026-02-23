@@ -1,3 +1,4 @@
+---
 id: cdd
 name: Com.Dominio Digital 4.0
 logo: ./images/logos/cdd.png
@@ -20,3 +21,4 @@ locations:
 age:
   min: 18
   max: 29
+---
