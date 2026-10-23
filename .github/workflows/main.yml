@@ -13,6 +13,6 @@ jobs:
       with:
         server: 187.45.195.11
         username: institutoalianca1
-        password: InstAlianca1##
+        password: InstiAlianca2026#
         protocol: ftps
         server-dir: /public_html/cadastro/
